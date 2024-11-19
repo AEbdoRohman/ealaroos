@@ -35,7 +35,7 @@
             <li><a href="#contact">اتصل بنا</a></li>
           </ul>
           <a href="#" class="logo">
-            <img src="./image/NDS.png" alt="شعار الشركة" />
+            <img src="./image/AROOS-PNG.png" alt="شعار الشركة" />
           </a>
         </nav>
       </div>
@@ -43,82 +43,128 @@
 
     <!-- slider section -->
     <section class="slider">
-      <!-- <div class="container"> -->
-      <div class="slide-swp mySwiper">
+      <div class="slide-swp main-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <!-- <a href="#"> -->
-            <img src="image/slid1.webp" alt="product" />
-            <!-- </a> -->
+            <img src="image/p1.jpeg" alt="Product 1" />
           </div>
           <div class="swiper-slide">
-            <a href="#">
-              <img src="image/slid2.webp" alt="product" />
-            </a>
+            <img src="image/p2.jpeg" alt="Product 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/p3.jpeg" alt="Product 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/p4.jpeg" alt="Product 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/p5.jpeg" alt="Product 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/p6.jpeg" alt="Product 2" />
           </div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
-      <!-- </div> -->
+
+      <div class="slide-swp thumbs-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="image/p1.jpeg" alt="Thumbnail 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/p2.jpeg" alt="Thumbnail 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/p3.jpeg" alt="Thumbnail 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/p4.jpeg" alt="Thumbnail 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/p5.jpeg" alt="Thumbnail 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/p6.jpeg" alt="Thumbnail 2" />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- product section  -->
-    <section class="slide slide-sale mt">
-      <div class="container">
-        <div class="sale-sec">
-          <div class="top-head top-title">
-            <h2 class="top-title">احدث المنتجات</h2>
-          </div>
-          <div class="products">
-            <div class="product">
-              <div class="sale-parsent">50%</div>
-              <div class="img-product">
-                <img src="image/p4.jpeg" alt="product" />
-                <img class="img-hover" src="image/p3.jpeg" alt="product" />
-              </div>
-              <h3 class="name-product">
-                <a href="#"> ميدالية لوحة سيارة ملكي بالاسم </a>
-              </h3>
-              <p class="price-product">$100 <span>$70</span></p>
-              <button class="read-more">
-                <a href="/prduct.html?id=1"> اقرء المزيد </a>
-              </button>
-            </div>
-            <div class="product">
-              <div class="sale-parsent">50%</div>
-              <div class="img-product">
-                <img src="image/p2.jpeg" alt="product" />
-                <img class="img-hover" src="image/p1.jpeg" alt="product" />
-              </div>
-              <h3 class="name-product">
-                <a href="#"> ميدالية لوحة سيارة ملكي بالاسم </a>
-              </h3>
-              <p class="price-product">$100 <span>$70</span></p>
-              <button class="read-more">
-                <a href="/prduct.html?id=2"> اقرء المزيد </a>
-              </button>
-            </div>
-            <div class="product">
-              <div class="sale-parsent">50%</div>
-              <div class="img-product">
-                <img src="image/p5.jpeg" alt="product" />
-                <img class="img-hover" src="image/p6.jpeg" alt="product" />
-              </div>
-              <h3 class="name-product">
-                <a href="#"> ميدالية لوحة سيارة ملكي بالاسم </a>
-              </h3>
-              <p class="price-product">$100 <span>$70</span></p>
-              <button class="read-more">
-                <a href="/prduct.html?id=1"> اقرء المزيد </a>
-              </button>
-            </div>
-          </div>
-        </div>
+    <section class="product-details">
+      <div class="product-image">
+        <img src="image/قييم العملاء.png" alt="شعار الشركة" />
+      </div>
+      <!--<h1 class="product-title">ميدالية لوحة سيارة طويلة بالاسم</h1>-->
+      <p class="product-description">
+        ميدالية مفاتيح لوحة سيارة طويلة بالاسم – لمسة فخامة وأناقة في كل
+        التفاصيلتميّز بإضافة راقية لمفاتيحك مع ميدالية مفاتيح مستوحاة من لوحة
+        السيارة الطويلة...
+      </p>
+
+      <p class="product-price">السعر: <span>150.00 ر.س</span></p>
+    </section>
+
+    <section class="data-product container">
+      <img src="image/p1.jpeg" alt="شعار الشركة" />
+      <div class="form-container">
+        <form id="contactForm">
+          <label for="name">الاسم الجانبي :</label>
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="الاسم على القطعة الصغيرة"
+            required
+          />
+
+          <label for="name2">الاحرف والارقام :</label>
+          <input
+            type="text"
+            id="name2"
+            name="user_email"
+            placeholder="الاحرف والارقام على اللوحة"
+            required
+          />
+
+          <label for="topic">لون الطلاء :</label>
+          <select id="topic" name="user_topic" required>
+            <option value="" data-price="0">اختر</option>
+            <option value="مطلي بالذهب" data-price="17.25">
+              مطلي بالذهب (17.25)
+            </option>
+            <option value="مطلي بالفضة" data-price="17.25">
+              مطلي بالفضة (17.25)
+            </option>
+            <option value="اكريلك ابيض" data-price="0">اكريلك ابيض</option>
+          </select>
+
+          <label for="priority">تغليف هدية:</label>
+          <select id="priority" name="user_priority" required>
+            <option value="" data-price="0">اختر</option>
+            <option value="لا" data-price="0">لا</option>
+            <option value="نعم" data-price="17.25">نعم (17.25)</option>
+          </select>
+
+          <label for="message">كرت اهداء:</label>
+          <textarea
+            id="message"
+            name="user_message"
+            rows="4"
+            placeholder="اكتب هنا"
+            required
+          ></textarea>
+
+          <!-- السعر الإجمالي -->
+          <p>السعر الإجمالي: <span id="totalPrice">150.00</span> ر.س</p>
+
+          <button type="submit">اشتري الان</button>
+        </form>
+        <div id="statusMessage"></div>
       </div>
     </section>
 
     <!-- about  -->
-    <section id="about">
+    <section id="about sec-p">
       <div class="container">
         <h2 class="top-title">من نحن</h2>
 
@@ -158,7 +204,7 @@
       </div>
     </section>
     <!-- Services -->
-    <section id="services">
+    <section id="services sec-p">
       <div class="container">
         <h2 class="top-title mb-3">مميزاتنا</h2>
 
@@ -187,7 +233,7 @@
     </section>
 
     <!-- our-work -->
-    <section id="our-work">
+    <section id="our-work sec-p">
       <div class="container">
         <h2 class="top-title mb-4">خدماتنا</h2>
         <p class="sup-title">نقدم مجموعة من الخدمات تتلخص في</p>
@@ -214,18 +260,11 @@
               <p>هدايا رجالي</p>
             </div>
           </div>
-          <div class="our-work-card">
-            <img src="./image/serv2.png" alt="service1" />
-            <div class="card-content">
-              <h3><a href="#"> هدايا رجالي</a></h3>
-              <p>هدايا رجالي</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
     <!-- Contact us -->
-    <section id="contact" class="contact-us">
+    <section id="contact" class="contact-us sec-p">
       <div class="container">
         <h2 class="top-title">تواصل معنا</h2>
         <div class="main-contact">
@@ -271,7 +310,7 @@
               ></textarea>
               <label for="message" class="form-label">الرسالة</label>
             </div>
-            <button type="submit" class="btn">إرسال</button>
+            <button type="submit">إرسال</button>
           </form>
           <!-- Contact Info Section -->
 
@@ -356,12 +395,12 @@
       <i class="fa-brands fa-whatsapp"></i>
     </a>
     <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" title="Go to top">
+    <div id="scrollToTopBtn" title="Go to top">
       <i class="fa-solid fa-angles-up"></i>
-    </button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="JS/swiper.js"></script>
-    <script src="JS/product.js"></script>
     <script src="JS/main.js"></script>
   </body>
 </html>

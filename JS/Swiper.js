@@ -1,54 +1,48 @@
-// Swiper Slider Banner
+// سلايدر المعاينات
+const thumbsSlider = new Swiper(".thumbs-slider", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
 
-var swiper = new Swiper(".slide-swp", {
+// السلايدر الرئيسي
+const mainSlider = new Swiper(".main-slider", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    dynamicBullets: true,
   },
   autoplay: {
     delay: 2500,
   },
   loop: true,
-  navigation,
-});
-
-// Swiper Slider Sales Products
-var swiper = new Swiper(".sale-sec", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: thumbsSlider, // الربط مع سلايدر المعاينات
   },
   breakpoints: {
     0: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 5,
     },
     430: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     640: {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     992: {
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     1200: {
-      slidesPerView: 5,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
   },
-
-  autoplay: {
-    delay: 3000,
-  },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-  loop: true,
 });

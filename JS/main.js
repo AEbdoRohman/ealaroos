@@ -4,13 +4,13 @@ const navLinks = document.querySelector(".nav-links");
 const navLinkItems = document.querySelectorAll(".nav-links li a");
 const body = document.body;
 
-window.addEventListener("load", function () {
-  // Keep the loading screen visible for 5 seconds
-  setTimeout(function () {
-    const loadingScreen = document.getElementById("loading-screen");
-    loadingScreen.style.display = "none";
-  }, 2000);
-});
+// window.addEventListener("load", function () {
+//   // Keep the loading screen visible for 5 seconds
+//   setTimeout(function () {
+//     const loadingScreen = document.getElementById("loading-screen");
+//     loadingScreen.style.display = "none";
+//   }, 2000);
+// });
 
 window.onload = function () {
   var notification = document.getElementById("notification");
@@ -102,3 +102,63 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 100);
   });
 });
+
+// تهيئة EmailJS بمفتاحك العام
+emailjs.init("zQQVD-ibX_P5ERxb6"); // ضع المفتاح العام الخاص بك هنا
+
+// استهداف النموذج وإيقاف السلوك الافتراضي
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // إيقاف إعادة تحميل الصفحة
+
+    // إظهار رسالة تحميل أثناء الإرسال (اختياري)
+    document.getElementById("statusMessage").innerHTML = "Sending message...";
+
+    // جمع بيانات النموذج
+    const formData = {
+      user_name: document.getElementById("name").value,
+      user_email: document.getElementById("name2").value,
+      user_topic: document.getElementById("topic").value,
+      user_priority: document.getElementById("priority").value,
+      user_message: document.getElementById("message").value,
+    };
+
+    // إرسال البيانات باستخدام EmailJS
+    emailjs.send("service_093ormg", "template_sojpl2u", formData).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        document.getElementById("statusMessage").innerHTML =
+          '<span style="color: green;">Message sent successfully!</span>';
+        window.location.href = "https://mtlealaroos.com/ar/cart";
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        document.getElementById("statusMessage").innerHTML =
+          '<span style="color: red;">Failed to send message. Please try again.</span>';
+      }
+    );
+  });
+
+const basePrice = 150.0;
+
+const options = document.querySelectorAll("select");
+const totalPriceElement = document.getElementById("totalPrice");
+
+function calculateTotalPrice() {
+  let totalPrice = basePrice;
+
+  options.forEach((option) => {
+    const selectedOption = option.options[option.selectedIndex];
+    const additionalPrice = parseFloat(selectedOption.dataset.price || 0);
+    totalPrice += additionalPrice;
+  });
+
+  totalPriceElement.textContent = totalPrice.toFixed(2);
+}
+
+options.forEach((option) => {
+  option.addEventListener("change", calculateTotalPrice);
+});
+
+calculateTotalPrice();
