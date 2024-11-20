@@ -91,17 +91,20 @@
     </section>
 
     <section class="product-details">
+      <h1 class="product-title">ميدالية مفاتيح بشكل لوحة السيارة</h1>
       <div class="product-image">
-        <img src="image/reat.png" alt="reating" />
+        <img src="image/reate.png" alt="reating" />
       </div>
-      <!--<h1 class="product-title">ميدالية لوحة سيارة طويلة بالاسم</h1>-->
-      <p class="product-description">
-        ميدالية مفاتيح لوحة سيارة طويلة بالاسم – لمسة فخامة وأناقة في كل
-        التفاصيلتميّز بإضافة راقية لمفاتيحك مع ميدالية مفاتيح مستوحاة من لوحة
-        السيارة الطويلة...
+      <p class="product-description">أضف لمسة فريدة لمفاتيحك مع ميدالية مستوحاة من اللوحات السعودية، مخصصة بالاسم. متوفرة بثلاثة ألوان راقية: مطلي بالذهب، الفضة، أو الأكريليك الأبيض، لتجمع بين التصميم الأنيق والجودة العالية. مثالية لك أو كهدية مميزة.
+    </br>
+        تصميم مخصص يعكس ذوقك الفريد.
+  </br>
+        تغليف أنيق يجعلها مثالية للإهداء.
+  </br>
+       سرعة في التوصيل لتصل إليك بأسرع وقت.
       </p>
 
-      <p class="product-price">السعر: <span>150.00 ر.س</span></p>
+      <p class="product-price">السعر: <span>230.00</span> 92.00 ر.س</p>
     </section>
 
     <section class="data-product container">
@@ -114,7 +117,6 @@
             id="name"
             name="user_name"
             placeholder="الاسم على القطعة الصغيرة"
-            required
           />
 
           <label for="name2">الاحرف والارقام :</label>
@@ -123,11 +125,10 @@
             id="name2"
             name="user_email"
             placeholder="الاحرف والارقام على اللوحة"
-            required
           />
 
           <label for="topic">لون الطلاء :</label>
-          <select id="topic" name="user_topic" required>
+          <select id="topic" name="user_topic" >
             <option value="" data-price="0">اختر</option>
             <option value="مطلي بالذهب" data-price="17.25">
               مطلي بالذهب (17.25)
@@ -139,10 +140,20 @@
           </select>
 
           <label for="priority">تغليف هدية:</label>
-          <select id="priority" name="user_priority" required>
+          <select id="priority" name="user_priority">
             <option value="" data-price="0">اختر</option>
             <option value="لا" data-price="0">لا</option>
             <option value="نعم" data-price="17.25">نعم (17.25)</option>
+          </select>
+
+          
+          <label for="board"> شكل اللوحة :</label>
+          <select id="board" name="user_board">
+            <option value="" data-price="0">اختر</option>
+            <option value="اللوحة الملكي سيفين ونخلة" data-price="0">اللوحة الملكي سيفين ونخلة</option>
+            <option value="اللوحة بشعار الرؤية" data-price="0">اللوحة بشعار الرؤية</option>
+            <option value="اللوحة المربع الكلاسيكي" data-price="0">اللوحة المربع الكلاسيكي</option>
+            <option value="اللوحة الطويلة كلاسيكي" data-price="0">اللوحة الطويلة كلاسيكي</option>
           </select>
 
           <label for="message">كرت اهداء:</label>
@@ -151,7 +162,6 @@
             name="user_message"
             rows="4"
             placeholder="اكتب هنا"
-            required
           ></textarea>
 
           <!-- السعر الإجمالي -->
@@ -164,7 +174,7 @@
     </section>
 
     <!-- about  -->
-    <section id="about sec-p">
+    <section class="about sec-p">
       <div class="container">
         <h2 class="top-title">من نحن</h2>
 
@@ -174,33 +184,6 @@
           بتقديم خدمات عالية الجودة تلبي احتياجات كل عميل بشكل فريد.
         </p>
 
-        <div class="about-card">
-          <div class="card-inner">
-            <h2 class="mb-4"><i class="fa-solid fa-eye"></i> رؤيتنا</h2>
-            <div>
-              <p>
-                <i class="fa-solid fa-caret-left i-arrow"></i>
-                رؤيتنا بسيطة: تمكين الشركات من الازدهار في العصر الرقمي. نؤمن
-                بأن لكل شركة القدرة على تحقيق إنجازات كبيرة عبر الإنترنت، ونحن
-                هنا لمساعدتهم في تحقيق ذلك. نعامل عملاءنا كشركاء، وليس مجرد
-                عملاء، ونحن ملتزمون ببناء علاقات طويلة الأمد مبنية على الثقة
-                والاحترام المتبادل.
-              </p>
-            </div>
-          </div>
-
-          <div class="card-inner">
-            <h2 class="mb-4"><i class="fa-solid fa-shield"></i> نقاط قوتنا</h2>
-            <div>
-              <p>
-                <i class="fa-solid fa-caret-left i-arrow"></i>
-                التحديات وخلق الفرص: نرى التحديات على أنها فرص للتعلم والنمو.
-                المرونة: نحن شركة مرنة يمكنها التكيف مع التغيير. الابتكار: نحن
-                دائما نبحث عن طرق جديدة ومبتكرة لتحسين أعمالنا.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <!-- Services -->
@@ -232,86 +215,10 @@
       </div>
     </section>
 
-    <!-- our-work -->
-    <section id="our-work sec-p">
-      <div class="container">
-        <h2 class="top-title mb-4">خدماتنا</h2>
-        <p class="sup-title">نقدم مجموعة من الخدمات تتلخص في</p>
-
-        <div class="main-our-work">
-          <div class="our-work-card">
-            <img src="./image/serv2.png" alt="service1" />
-            <div class="card-content">
-              <h3><a href="#"> هدايا رجالي</a></h3>
-              <p>هدايا رجالي</p>
-            </div>
-          </div>
-          <div class="our-work-card">
-            <img src="./image/serv2.png" alt="service1" />
-            <div class="card-content">
-              <h3><a href="#"> هدايا رجالي</a></h3>
-              <p>هدايا رجالي</p>
-            </div>
-          </div>
-          <div class="our-work-card">
-            <img src="./image/serv2.png" alt="service1" />
-            <div class="card-content">
-              <h3><a href="#"> هدايا رجالي</a></h3>
-              <p>هدايا رجالي</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Contact us -->
     <section id="contact" class="contact-us sec-p">
       <div class="container">
-        <h2 class="top-title">تواصل معنا</h2>
         <div class="main-contact">
-          <!-- Form Section -->
-          <form class="form">
-            <div class="form-group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="form-control"
-                required
-              />
-              <label for="name" class="form-label">الاسم</label>
-            </div>
-            <div class="form-group">
-              <input
-                type="text"
-                id="service"
-                name="service"
-                class="form-control"
-                required
-              />
-              <label for="service" class="form-label">الخدمة</label>
-            </div>
-            <div class="form-group">
-              <input
-                type="number"
-                id="phone"
-                name="phone"
-                class="form-control"
-                required
-              />
-              <label for="phone" class="form-label">رقم الهاتف</label>
-            </div>
-            <div class="form-group">
-              <textarea
-                id="message"
-                name="message"
-                class="form-control"
-                rows="5"
-                required
-              ></textarea>
-              <label for="message" class="form-label">الرسالة</label>
-            </div>
-            <button type="submit">إرسال</button>
-          </form>
           <!-- Contact Info Section -->
 
           <div class="contact-info">
@@ -320,11 +227,11 @@
               <p>
                 <i class="fa-solid fa-location-dot me-2"></i> الرياض, السعودية
               </p>
-              <a href="tel:966555555555"
-                ><i class="fa-solid fa-phone me-2"></i> 0555555555</a
+              <a href="tel:966506678107"
+                ><i class="fa-solid fa-phone me-2"></i> 0506678107</a
               >
-              <a href="mailto:0H2oZ@example.com"
-                ><i class="fa-solid fa-envelope me-2"></i> 0H2oZ@example.com</a
+              <a href="mailto:info@mtlealaroos.com"
+                ><i class="fa-solid fa-envelope me-2"></i> info@mtlealaroos.com</a
               >
             </div>
           </div>
@@ -353,7 +260,7 @@
               <li>
                 <a href="tel:966123456789">
                   <i class="fa-solid fa-phone-flip"></i>
-                  <span>966345667987</span></a
+                  <span>966506678107</span></a
                 >
               </li>
             </ul>
@@ -363,24 +270,14 @@
             <ul class="social-media">
               <li>
                 <a
-                  href="https://www.facebook.com"
-                  class="fa-brands fa-facebook-f"
-                ></a>
-              </li>
-              <li>
-                <a
                   href="https://www.instagram.com"
                   class="fa-brands fa-instagram"
                 ></a>
               </li>
               <li>
-                <a href="https://twitter.com" class="fa-brands fa-twitter"></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/company/nds.msolutions/"
-                  class="fa-brands fa-linkedin-in"
-                ></a>
+                <a href="https://wa.me/966506678107" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -391,7 +288,7 @@
         </div>
       </div>
     </footer>
-    <a href="https://wa.me/201029666272" class="whatsapp-icon" target="_blank">
+    <a href="https://wa.me/966506678107" class="whatsapp-icon" target="_blank">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
     <!-- Scroll to Top Button -->

@@ -295,7 +295,7 @@ header .navbar ul li:hover a {
 /* details product  */
 .product-details {
   text-align: center;
-  margin: 0 20px;
+  margin: 0 15px;
 }
 .product-details .product-image {
   width: 100%;
@@ -317,12 +317,29 @@ header .navbar ul li:hover a {
   color: #666;
   margin-bottom: 15px;
   line-height: 1.5;
+  width: 60%;
+  margin: auto;
 }
 
 .product-details .product-price {
   font-size: 1.2rem;
   color: var(--main-color-alt);
   font-weight: bold;
+}
+.product-details .product-price span {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 5px;
+}
+@media screen and (max-width: 768px) {
+  .product-details .product-title {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+  }
+  .product-details .product-description {
+    width: 100%;
+  }
 }
 
 /* form data */
@@ -395,9 +412,6 @@ button:hover {
   font-size: 14px;
 }
 @media screen and (max-width: 768px) {
-  .data-product {
-    margin: 0;
-  }
   .data-product img {
     display: none;
   }
@@ -408,42 +422,15 @@ button:hover {
 }
 
 /* about */
-#about {
+.about {
   background-color: #fff;
+  padding-top: 4rem;
 }
 .about-card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 2rem;
   gap: 1rem;
-}
-.card-inner {
-  padding: 1rem 2rem 1rem 1rem;
-  box-shadow: 0px 4px 10px rgba(14, 12, 12, 0.2);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-}
-.card-inner:hover {
-  transform: translateY(-10px);
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  -o-transform: translateY(-10px);
-}
-.card-inner h2 i {
-  color: #feb000;
-}
-.card-inner .i-arrow {
-  margin-left: 0.5rem;
 }
 
 /* services */
@@ -506,78 +493,6 @@ button:hover {
   }
 }
 
-/* our work */
-.main-our-work {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 2rem;
-}
-
-@media screen and (min-width: 1168px) {
-  .main-our-work {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.our-work-card {
-  height: auto;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.our-work-card:hover {
-  transform: scale(1.05);
-}
-
-.our-work-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.card-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 20px;
-  text-align: center;
-}
-
-.our-work-card:hover .card-content {
-  opacity: 1;
-}
-
-.card-content h3 a {
-  color: var(--main-color-alt);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.card-content p {
-  font-size: 16px;
-}
-
 /* contact us */
 #contact {
   /* background-color: var(--main-color); */
@@ -590,56 +505,6 @@ button:hover {
   margin-top: 2rem;
 }
 
-#contact .form {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  background-color: #1277b505;
-  margin: 1rem 0.5rem 0;
-  padding: 1rem;
-}
-
-#contact .form-group {
-  position: relative;
-}
-#contact .form-group label {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 1.1rem;
-  margin-bottom: 0.4rem;
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-}
-
-#contact .form-control {
-  padding: 10px 5px;
-  font-size: 1.5rem;
-  box-shadow: none;
-  width: 95%;
-  margin: 0.5rem;
-  border: none;
-  border-bottom: #ddd 2px solid;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-}
-
-#contact .form-control:focus {
-  box-shadow: 0;
-  border-color: var(--main-color);
-}
-#contact .form-control:focus + label {
-  opacity: 0;
-  transform: translateX(-200px);
-  -webkit-transform: translateX(-200px);
-  -moz-transform: translateX(-200px);
-  -ms-transform: translateX(-200px);
-  -o-transform: translateX(-200px);
-}
 .contact-info {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   background-color: #1277b505;
@@ -750,6 +615,7 @@ footer .container {
 
 .social-media {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 

@@ -103,8 +103,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// تهيئة EmailJS بمفتاحك العام
-emailjs.init("zQQVD-ibX_P5ERxb6"); // ضع المفتاح العام الخاص بك هنا
+// JavaScript: Send email using EmailJS
+emailjs.init("zQQVD-ibX_P5ERxb6");
 
 // استهداف النموذج وإيقاف السلوك الافتراضي
 document
@@ -121,6 +121,7 @@ document
       user_email: document.getElementById("name2").value,
       user_topic: document.getElementById("topic").value,
       user_priority: document.getElementById("priority").value,
+      user_board: document.getElementById("board").value,
       user_message: document.getElementById("message").value,
     };
 
@@ -140,7 +141,7 @@ document
     );
   });
 
-const basePrice = 150.0;
+const basePrice = 92.0;
 
 const options = document.querySelectorAll("select");
 const totalPriceElement = document.getElementById("totalPrice");
