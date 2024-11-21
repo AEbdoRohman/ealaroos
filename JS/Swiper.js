@@ -21,28 +21,12 @@ const mainSlider = new Swiper(".main-slider", {
     prevEl: ".swiper-button-prev",
   },
   thumbs: {
-    swiper: thumbsSlider, // الربط مع سلايدر المعاينات
+    swiper: thumbsSlider,
   },
   breakpoints: {
     0: {
       slidesPerView: 1,
       spaceBetween: 5,
-    },
-    430: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    992: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    1200: {
-      slidesPerView: 1,
-      spaceBetween: 20,
     },
   },
 });
