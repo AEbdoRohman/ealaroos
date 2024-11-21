@@ -131,7 +131,7 @@ document
         console.log("SUCCESS!", response.status, response.text);
         document.getElementById("statusMessage").innerHTML =
           '<span style="color: green;">Message sent successfully!</span>';
-        window.location.href = "https://mtlealaroos.com/ar/cart";
+        window.location.href = "https://mtlealaroos.com/ar/medle/p1128830387";
       },
       function (error) {
         console.log("FAILED...", error);
